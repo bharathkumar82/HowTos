@@ -77,4 +77,6 @@ Git with httpd
 6. gt clone like :  http://gituser:bharath@100.89.14.201/git/projectx.git	
 		 
 		 
-		 
+Gitlab in Centos
+-----------------
+https://linuxize.com/post/how-to-install-and-configure-gitlab-on-centos-7/		 
