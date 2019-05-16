@@ -54,3 +54,27 @@
 		 - This path is relaytive to /home/git
 	  ii) To use absolute path
 	     - $> git clone ssh://git@server.com:port/home/git/repository.git 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+Git with httpd
+---------------
+		 
+1. Follow the steps in http://www.yolinux.com/TUTORIALS/GIT-Server-Configuration.html to setup httpd , directories with correct rights
+2. Replace the auth portion of git.conf of above example with 
+                AuthType Basic
+				AuthName "git repository"
+				AuthUserFile /var/www/passwd.git
+				Require valid-user
+3. create passwd.git by 
+    $> htpasswd -c /var/www/passwd.git user1	
+4. Disable selinux
+5. Look for logs in /var/log/httpd/error_log
+6. gt clone like :  http://gituser:bharath@100.89.14.201/git/projectx.git	
+		 
+		 
+		 
